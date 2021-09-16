@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>JQuery Assignment 3</title>
-    <meta name="viewport" content="content="width=device-width, initial-scale=1.0"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -13,7 +13,7 @@
 
 
 </head>
-<body style="background-color:pink">
+<body style="background-color:white">
     <nav class="navbar navbar-expand-sm  navbar-light fixed-top" style="background-color:white">
   <!-- Brand/logo -->
       <a class="navbar-brand" href="#">
@@ -42,16 +42,16 @@
           <form class="form-inline " action="/action_page.php" >
               <div class="input-group ml-auto" style="; width:500px">
                   <div class="input-group-prepend">
-                    <span class="input-group-text btn">Search</span>
+                    <span class="input-group-text btn" style="background-color:white;font-weight:bold">Search</span>
                   </div>
-                  <input type="text" class="form-control" placeholder="Search....">
+                  <input type="text" class="form-control" placeholder="Search for Product / Brand.......">
               </div>
           </form>
       </div>
 
         <ul class="navbar-nav" style="margin-right:50px">
             <li class="nav-item">
-                <a class="nav-link" style="text-decoration: none" href="#">
+                <a class="nav-link profile" style="text-decoration: none ; margin-left:20px" href="#">
                     <img class="" src="profile.png" alt="Card image"    style="width:25px; margin-left:10px; height:24px">
                     <div style="font-size:12px ; margin-top:5px"><b>PROFILE</b></div>
                 </a>
@@ -59,11 +59,11 @@
             <li class="nav-item">
                 <a class="nav-link" style="text-decoration: none" href="#">
                     <img class="" src="wishlist.jpg" alt="Card image"   style="width:32px;height:30px; margin-left:7px ">
-                    <div  style="font-size:12px;margin-top:0px"><b>PROFILE</b></div>
+                    <div  style="font-size:12px;margin-top:0px"><b>WISHLIST</b></div>
                 </a>
             </li>
             <li class="nav-item" style="width:25px">
-              <a class="nav-link" style="text-decoration: none" href="#">
+              <a class="nav-link" style="text-decoration: none" id="cart" href="#">
                   <img class="" src="cart1.png" alt="Card image"   style="width:25px; margin-top:5px">
                   <div align="center" style="font-size:12px"><b>CART</b></div>
               </a>
@@ -71,12 +71,12 @@
         </ul>
     </nav>
 
-    <div class="container" style="margin:25px 0;">
+    <div class="container" style="margin-left:25px;margin-top:150px">
         <a  href="#" style="text-decoration: none;color:black">Home</a>/<a href="#" style="text-decoration: none;color:black">Footwear</a>/<a href="#" style="text-decoration: none;color:black">Men Footwear</a>/<a href="#" style="text-decoration: none;color:black">Sports Shoes</a>/<a href="#" style="text-decoration: none;color:black">Nike Sports Shoes</a>><a href="#" style="text-decoration: none;color:black"></a><b>Men White Air Jordan 7 Retro BCFC High-Top Basketball Shoes</b>
     </div>
     <div style="background-color:white; width:100%;">
         <div class="row">
-            <div class="col-sm-7" style="background-color:lavender;border-right:1px ridge grey; margin-top:10px ">
+            <div class="col-sm-7" style="background-color:white;border-right:1px ridge grey; margin-top:10px ">
                 <div class="row" style="">
                     <div class="col-sm-6" style="background-color:white; margin:0 0">
                         <img class="imgprod" src="shoes1.png" width="100%">
@@ -100,7 +100,7 @@
                     <p style="margin-top:25px; font-size:20px" id="prodPrice"><b>Rs. 18625</b></p>
                     <p style="color:green; font-weight:bold;line-height: 1.0">Inclusive of all taxes</p>
                     <div>
-                        <p style="font-weight:bold">SELECT SIZE (UK Size) <a href="#" style="color:#ff3e6c;margin-left:25px;font-weight:bold;text-decoration: none">Color Chart ></a></p>
+                        <p style="font-weight:bold">SELECT SIZE (UK Size) <a href="#" style="color:#5b1cf0;margin-left:25px;font-weight:bold;text-decoration: none">Color Chart ></a></p>
                     </div>
                     <div style="margin-top:35px">
                         <button  style="border-radius:50%; width:60px;height:60px">6</button>
@@ -112,7 +112,7 @@
                         <button style="border-radius:50%; width:60px;height:60px">12</button>
                     </div>
                     <div style="margin-top:45px">
-                        <button class="btn addToCrt" value="Men White Air Jordan 7 Retro BCFC High-Top Basketball Shoes" style=" ;width:280px;height:60px;background-color:#ff3e6c; font-size:20px;font-weight:bold;border:1px solid black;color:white  "><span><i class="fa fa-shopping-bag"></i></span>  Add to Cart</button>
+                        <button class="btn addToCrt" value="Men White Air Jordan 7 Retro BCFC High-Top Basketball Shoes" style=" ;width:280px;height:60px;background-color:#5b1cf0; font-size:20px;font-weight:bold;border:1px solid black;color:white  "><span><i class="fa fa-shopping-bag"></i></span>  Add to Cart</button>
                         <button class="btn btnWish" value="Men White Air Jordan 7 Retro BCFC High-Top Basketball Shoes" id="" style=" width:220px;height:60px; border:2px solid black;font-size:20px;padding-top:0;font-weight:bold">WISH<span style="color:red;font-size:34px;"> &#9825; </span>LIST</button>
                     </div>
                     <div style="margin-top:45px">
@@ -135,25 +135,25 @@
                 </div>
                 <div style="line-height: 1.5; margin-top:25px; border-bottom:1px solid grey;padding-bottom:20px"  >
                     <h5>BEST OFFERS </h5>
-                    <h6>Best Price : <span style="color:orange"> Rs.16680</span> </h6>
+                    <h6>Best Price : <span style="color:red"> Rs.16680</span> </h6>
                     <ul>
                         <li>Applicable on: Orders above Rs. 5000</li>
                         <li>Coupon code: PREMIUM2000</li>
                         <li>Coupon Discount: Rs. 2000 off (check cart for final savings)</li>
                     </ul>
-                    <a href="#" style="color:#ff3e6c;text-decoration: none"><b>View Eligible Products</b></a>
-                    <h6>Get additional offer</span> </h6>
+                    <a href="#" style="color:#5b1cf0;text-decoration: none"><b>View Eligible Products</b></a>
+                    <h6 style="padding-top:10px">Get additional offer</span> </h6>
                     <p>Buy this style and unlock additional ₹100 off on a selected catalogue.</p>
-                    <a href="#" style="color:#ff3e6c;text-decoration: none"><b>View Products</b></a>
-                    <h6>EMI option available</span> </h6>
+                    <a href="#" style="color:#5b1cf0;text-decoration: none"><b>View Products</b></a>
+                    <h6 style="padding-top:10px">EMI option available</span> </h6>
                     <ul>
                         <li>EMI starting from Rs.873/month</li>
                     </ul>
-                    <a href="#" style="color:#ff3e6c;text-decoration: none;"><b>View Plan</b></a>
+                    <a href="#" style="color:#5b1cf0;text-decoration: none;"><b>View Plan</b></a>
                 </div>
                 <div style=" margin-top:25px;line-height: .7;border-bottom:1px solid grey;padding-bottom:20px">
                     <h5>PRODUCT DETAILS &#9776;</h5><br>
-                    <h6>Features:</h6><br>
+                    <h6 style="padding-top:10px">Features:</h6><br>
                     <p>A pair of white basketball shoes, has high-top styling</p>
                     <p>Lace-up detail</p>
                     <p>Leather and textile upper</p>
@@ -175,9 +175,9 @@
                     <p style="line-height:1.6;">Jordan and French soccer club Paris Saint-Germain add a new chapter to their celebrated partnership with the new Air Jordan 7 Retro, an exclusive sneaker that commemorates the winning spirit of both partners.
                         The pair features a luxurious construction that combines rough full-grain leather with translucent panels that allow you to see inside from the sides. It also includes red and blue accents in honor of the sports team's signature colors, as well as various elements of their iconography that enhance the design from top to bottom.</p><br>
 
-                    <h6>Material & Care</h6>
+                    <h6>Material & Care</h6><br>
                     <p>Upper material: Leather and textile upper</p>
-                    <p>Wipe with a clean, dry cloth to remove the dust</p>
+                    <p>Wipe with a clean, dry cloth to remove the dust</p><br>
 
                     <h6>Specifications</h6>
                     <table class="table table-borderless">
@@ -257,7 +257,7 @@
                     <p class="card-text">Shoe Name 001..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 001"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 001"  style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -269,7 +269,7 @@
                     <p class="card-text">Shoe Name 002..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 002"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 002"  style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -281,7 +281,7 @@
                     <p class="card-text">Shoe Name 003..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 003"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 003"  style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -293,7 +293,7 @@
                     <p class="card-text">Shoe Name 004..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 004"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 004"  style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -305,7 +305,7 @@
                     <p class="card-text">Shoe Name 005..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 005"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 005"  style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -317,7 +317,7 @@
                     <p class="card-text">Shoe Name 006..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 006"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 006"  style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -331,7 +331,7 @@
                     <p class="card-text">Shoe Name 007..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 007"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 007"  style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -343,7 +343,7 @@
                     <p class="card-text">Shoe Name 008..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 008"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 008"  style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -355,7 +355,7 @@
                     <p class="card-text">Shoe Name 009..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt "  value="Shoe Name 009" style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt "  value="Shoe Name 009" style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -367,7 +367,7 @@
                     <p class="card-text">Shoe Name 010..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 010"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 010"  style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -379,7 +379,7 @@
                     <p class="card-text">Shoe Name 011..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 011" style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 011" style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -391,7 +391,7 @@
                     <p class="card-text">Shoe Name 012..</p>
                     <p><b>Rs.15456</b></p>
                     <div class="btn-group">
-                        <button type="button" class="btn addToCrt " value="Shoe Name 012" style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn addToCrt " value="Shoe Name 012" style=" ;background-color:#5b1cf0; width:50%;font-weight:bold;color:white">Add to Cart</button>
                         <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
                     </div>
                   </div>
@@ -403,78 +403,188 @@
 <!--Carousel-->
 
 
-h2>Modal Example</h2>
-  <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button>
-<div style="width:80%">
-<div class="modal" id="myModal">
-    <div class="modal-dialog modal-lg" >
+
+    <div style="width:80%">
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-lg" >
+                <div class="modal-content">
+
+                <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                <!-- Modal body -->
+                    <div class="modal-body">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+          <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="shoes1.png"  width="600px" height="600px" >
+                            </div>
+                                <div class="carousel-item">
+                                    <img src="shoes3.png" wwidth="600px" height="600px" >
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="shoes2.png"  width="600px" height="600px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="shoes4.png"  width="600px" height="600px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="shoes7.png"  width="600px" height="600px">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="shoes6.png"  width="600px" height="600px">
+                                </div>
+                            </div>
+
+          <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev" style="background-color:grey">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo" data-slide="next" style="background-color:grey">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="conf">
+    <div class="modal-dialog">
       <div class="modal-content">
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title"></h4>
+          <h4 id="modal-title"></h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
-          <div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="shoes1.png"  width="600px" height="600px" >
-    </div>
-    <div class="carousel-item">
-      <img src="shoes3.png" wwidth="600px" height="600px" >
-    </div>
-    <div class="carousel-item">
-      <img src="shoes2.png"  width="600px" height="600px">
-    </div>
-    <div class="carousel-item">
-      <img src="shoes4.png"  width="600px" height="600px">
-    </div>
-    <div class="carousel-item">
-      <img src="shoes7.png"  width="600px" height="600px">
-    </div>
-    <div class="carousel-item">
-      <img src="shoes6.png"  width="600px" height="600px">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev" style="background-color:grey">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next" style="background-color:grey">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
+            <p id="modelName"></p>
         </div>
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            <button type="button" class="btn mr-auto" id="accptBtn" data-dismiss="modal" style="border:1px solid black; font-weight:bold">Accept</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
         </div>
 
       </div>
     </div>
   </div>
-</div>
+
+    <div class="modal fade" id="confirAdd">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Added to Cart</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p id="confBody"></p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <div class="modal fade" id="cartElements">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">CART</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p id="cartElementsbody"></p>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">DONE</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ <div class="modal" id="prfileReg">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 id="profile-title">Login or Register</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+              <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Username / Mobile No." name="email">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+              </form><br>
+            <p>If not <a style="text-decoration:none; color:#5b1cf0" href="#"><b>Registered</b></a> or <a href="#" style="text-decoration:none; color:#5b1cf0"><b>Forgot Password</b></a></p>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 <script>
     $(document).ready(function()
     {
-
+        var itemcart = []
+        var itemno = 1
         $(".imgprod").click(function()
         {
             $("#myModal").modal('toggle');
@@ -482,10 +592,56 @@ h2>Modal Example</h2>
 
         $(".addToCrt").click(function()
         {
-            alert($(this).val() );
-        });
+               var x=$(this).val();
+
+
+               document.getElementById("modal-title").innerHTML ="Add to Cart";
+               document.getElementById("modelName").innerHTML ="Add " + x.bold() + " to Cart";
+               $("#conf").modal('toggle');
+                    $("#accptBtn").click(function()
+                    {
+                         document.getElementById("confBody").innerHTML = x.bold() + " added to Cart";
+
+                         itemcart.push(x)
+                         $("#confirAdd").modal('toggle');
+                    });
+
+            });
+            $("#cart").hover(function()
+            {
+
+                    var newCart = new Set(itemcart)
+
+                    let text = ``;
+                   for (let x of newCart.values()) {
+
+                      sessionStorage.setItem(x,1)
+                      text += `<div id="${x}" style="padding-bottom:5px"><p><b>${x}</b><button type="button" value="${x}" class="btn btn-danger btnRemove " style="float:right">Remove</button></div></p>`
+                   }
+                   document.getElementById("cartElementsbody").innerHTML =text;
+                  console.log(sessionStorage)
+                   $("#cartElements").modal('toggle');
+
+
+                $(".btnRemove").click(function()
+                {
+                    let q=$(this).val()
+                    sessionStorage.removeItem(q);
+                    document.getElementById(q).innerHTML ="";
+                    console.log(sessionStorage)
+                });
+
+            });
+            $(".profile").click(function()
+                {
+                    $("#prfileReg").modal('toggle');
+                });
+
     });
 
 </script>
+<div id="randoM">
+
+</div>
 </body>
 </html>
