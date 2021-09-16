@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Assignment 3</title>
+    <meta name="viewport" content="content="width=device-width, initial-scale=1.0"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body style="background-color:pink">
+    <nav class="navbar navbar-expand-sm  navbar-light fixed-top" style="background-color:white">
+  <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo1.png" alt="logo" style="width:200px;">
+      </a>
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="#"><b>MEN</b></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><b>WOMEN</b></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><b>KIDS</b></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><b>HOME & LIVING</b></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><b>BEAUTY</b></a>
+          </li>
+      </ul>
+      <div class="ml-auto">
+          <form class="form-inline " action="/action_page.php" >
+              <div class="input-group" style="margin-right:350px; width:400px">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text btn">Search</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Search....">
+              </div>
+          </form>
+      </div>
+
+        <ul class="navbar-nav" style="margin-right:50px">
+            <li class="nav-item">
+                <a class="nav-link" style="text-decoration: none" href="#">
+                    <img class="" src="profile.png" alt="Card image"    style="width:25px; margin-left:10px; height:24px">
+                    <div style="font-size:12px ; margin-top:5px"><b>PROFILE</b></div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="text-decoration: none" href="#">
+                    <img class="" src="wishlist.jpg" alt="Card image"   style="width:32px;height:30px; margin-left:7px ">
+                    <div  style="font-size:12px;margin-top:0px"><b>PROFILE</b></div>
+                </a>
+            </li>
+            <li class="nav-item" style="width:25px">
+              <a class="nav-link" style="text-decoration: none" href="#">
+                  <img class="" src="cart1.png" alt="Card image"   style="width:25px; margin-top:5px">
+                  <div align="center" style="font-size:12px"><b>CART</b></div>
+              </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="margin:25px 0;">
+        <a  href="#" style="text-decoration: none;color:black">Home</a>/<a href="#" style="text-decoration: none;color:black">Footwear</a>/<a href="#" style="text-decoration: none;color:black">Men Footwear</a>/<a href="#" style="text-decoration: none;color:black">Sports Shoes</a>/<a href="#" style="text-decoration: none;color:black">Nike Sports Shoes</a>><a href="#" style="text-decoration: none;color:black"></a><b>Men White Air Jordan 7 Retro BCFC High-Top Basketball Shoes</b>
+    </div>
+    <div style="background-color:white; width:100%;">
+        <div class="row">
+            <div class="col-sm-7" style="background-color:lavender;border-right:1px ridge grey; margin-top:10px ">
+                <div class="row" style="">
+                    <div class="col-sm-6" style="background-color:white; margin:0 0">
+                        <img class="imgprod" src="shoes1.png" width="100%">
+                        <img class="imgprod" src="shoes3.png" width="100%">
+                        <img class="imgprod" src="shoes7.png" width="100%">
+                    </div>
+                    <div class="col-sm-6" style="background-color:white;">
+                        <img class="imgprod" src="shoes2.png" width="100%">
+                        <img class="imgprod" src="shoes4.png" width="100%">
+                        <img class="imgprod" src="shoes6.png" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5" style="background-color:white; margin-top:20px; ">
+                <div style="padding-bottom:20px ;margin-left:10px; border-bottom:1px solid grey">
+                    <h3 style="margin-top:30px">NIKE</h3>
+                    <p style="font-size:23px; color:grey" id="prodName">Men White Air Jordan 7 Retro BCFC High-Top Basketball Shoes</p>
+                    <button class="buttonxx" style="border:1px solid #A0A0A0; height:35px; width:150px" >4.5 <span style="  color:green">&#9733;</span><span style="color:grey">|</span> 36 Ratings</button>
+                </div>
+                <div>
+                    <p style="margin-top:25px; font-size:20px" id="prodPrice"><b>Rs. 18625</b></p>
+                    <p style="color:green; font-weight:bold;line-height: 1.0">Inclusive of all taxes</p>
+                    <div>
+                        <p style="font-weight:bold">SELECT SIZE (UK Size) <a href="#" style="color:#ff3e6c;margin-left:25px;font-weight:bold;text-decoration: none">Color Chart ></a></p>
+                    </div>
+                    <div style="margin-top:35px">
+                        <button  style="border-radius:50%; width:60px;height:60px">6</button>
+                        <button style="border-radius:50%; width:60px;height:60px" disabled>7</button>
+                        <button style="border-radius:50%; width:60px;height:60px">8</button>
+                        <button style="border-radius:50%; width:60px;height:60px" disabled>9</button>
+                        <button style="border-radius:50%; width:60px;height:60px">10</button>
+                        <button style="border-radius:50%; width:60px;height:60px">11</button>
+                        <button style="border-radius:50%; width:60px;height:60px">12</button>
+                    </div>
+                    <div style="margin-top:45px">
+                        <button class="btn addToCrt" value="Men White Air Jordan 7 Retro BCFC High-Top Basketball Shoes" style=" ;width:280px;height:60px;background-color:#ff3e6c; font-size:20px;font-weight:bold;border:1px solid black;color:white  "><span><i class="fa fa-shopping-bag"></i></span>  Add to Cart</button>
+                        <button class="btn btnWish" value="Men White Air Jordan 7 Retro BCFC High-Top Basketball Shoes" id="" style=" width:220px;height:60px; border:2px solid black;font-size:20px;padding-top:0;font-weight:bold">WISH<span style="color:red;font-size:34px;"> &#9825; </span>LIST</button>
+                    </div>
+                    <div style="margin-top:45px">
+                        <h4>DELIVERY OPTIONS <i class="fa fa-truck"></i></h4>
+                        <div class="input-group" style="width:400px;margin-top:25px">
+                            <input type="text" class="form-control" placeholder="Postal Code" >
+                            <div class="input-group-append">
+                                <span class=" btn input-group-text" style="background-color:white; border-left:1px solid white;color:grey">CHECK</span>
+                            </div>
+                        </div>
+                        <p style="font-size:14px;margin-top:15px">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+                    </div>
+                </div>
+                <div style="line-height: 1.0; margin-top:25px">
+                     <p>100% Original Products</p>
+                     <p>Pay on delivery might be available</p>
+                     <p>Easy 30 days returns and exchanges</p>
+                     <p>Try & Buy might be available</p>
+
+                </div>
+                <div style="line-height: 1.5; margin-top:25px; border-bottom:1px solid grey;padding-bottom:20px"  >
+                    <h5>BEST OFFERS </h5>
+                    <h6>Best Price : <span style="color:orange"> Rs.16680</span> </h6>
+                    <ul>
+                        <li>Applicable on: Orders above Rs. 5000</li>
+                        <li>Coupon code: PREMIUM2000</li>
+                        <li>Coupon Discount: Rs. 2000 off (check cart for final savings)</li>
+                    </ul>
+                    <a href="#" style="color:#ff3e6c;text-decoration: none"><b>View Eligible Products</b></a>
+                    <h6>Get additional offer</span> </h6>
+                    <p>Buy this style and unlock additional ₹100 off on a selected catalogue.</p>
+                    <a href="#" style="color:#ff3e6c;text-decoration: none"><b>View Products</b></a>
+                    <h6>EMI option available</span> </h6>
+                    <ul>
+                        <li>EMI starting from Rs.873/month</li>
+                    </ul>
+                    <a href="#" style="color:#ff3e6c;text-decoration: none;"><b>View Plan</b></a>
+                </div>
+                <div style=" margin-top:25px;line-height: .7;border-bottom:1px solid grey;padding-bottom:20px">
+                    <h5>PRODUCT DETAILS &#9776;</h5><br>
+                    <h6>Features:</h6><br>
+                    <p>A pair of white basketball shoes, has high-top styling</p>
+                    <p>Lace-up detail</p>
+                    <p>Leather and textile upper</p>
+                    <p>Cushioned footbed</p>
+                    <p>Textured and patterned outsole</p>
+                    <p>Fabric lining</p>
+                    <p>Rubber sole</p>
+                    <p>Ventilation perforation</p>
+                    <p>Pull tab loop</p>
+                    <p>Padded ankle</p>
+                    <p>Padded heel</p><br>
+
+                    <h6>Design Details:</h6><br>
+                    <p>Brand Colour: WHITE/UNIVERSITY RED-COLLEGE NAVY</p>
+                    <p>Warranty: 6 months</p>
+                    <p>Warranty provided by brand/manufacturer</p><br>
+
+                    <h6>About The Shoe:</h6><br>
+                    <p style="line-height:1.6;">Jordan and French soccer club Paris Saint-Germain add a new chapter to their celebrated partnership with the new Air Jordan 7 Retro, an exclusive sneaker that commemorates the winning spirit of both partners.
+                        The pair features a luxurious construction that combines rough full-grain leather with translucent panels that allow you to see inside from the sides. It also includes red and blue accents in honor of the sports team's signature colors, as well as various elements of their iconography that enhance the design from top to bottom.</p><br>
+
+                    <h6>Material & Care</h6>
+                    <p>Upper material: Leather and textile upper</p>
+                    <p>Wipe with a clean, dry cloth to remove the dust</p>
+
+                    <h6>Specifications</h6>
+                    <table class="table table-borderless">
+                        <tr>
+                            <td><p style="font-size:12px">Sport</p><p>Basketball</p></td>
+                            <td><p style="font-size:12px">Material</p><p>Leather</p></td>
+                        </tr>
+                        <tr>
+                            <td><p style="font-size:12px">Fastening</p><p>Lace-Ups</p></td>
+                            <td><p style="font-size:12px">Ankle Height</p><p>High-Top</p></td>
+                        </tr>
+                        <tr>
+                            <td><p style="font-size:12px">Sport</p><p>Basketball</p></td>
+                            <td><p style="font-size:12px">Material</p><p>Leather</p></td>
+                        </tr>
+                        <tr>
+                            <td><p style="font-size:12px">Sport</p><p>Basketball</p></td>
+                            <td><p style="font-size:12px">Material</p><p>Leather</p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="margin-top:25px;line-height: .7;border-bottom:1px solid grey;padding-bottom:20px">
+                   <h5>RATINGS &#10031;</h5><br>
+
+                    <div class="row">
+                        <div class="col-sm-5" style=";"><br><br>
+                            <h1 style="font-size:60px">4.4 <span style="color:green;font-size:40px">&#9733;</span></h1>
+                            <p>36 Verified Buyers</p>
+                        </div>
+                        <div class="col-sm-2" style=";"><br>
+                            <p>5&#9733;</p>
+                            <p>4&#9733;</p>
+                            <p>3&#9733;</p>
+                            <p>2&#9733;</p>
+                            <p>1&#9733;</p>
+                        </div>
+                        <div class="col-sm-5" style=";"><br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:70%; background-color:green;height:5px;opacity: 0.5;"></div>
+                            </div><br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:10%; background-color:blue;height:5px;opacity: 0.5;"></div>
+                            </div><br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:10%; background-color:yellow;height:5px;opacity: 0.5;"></div>
+                            </div><br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:5%; background-color:orange;height:5px;opacity: 0.5;"></div>
+                            </div><br>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:5%; background-color:red;height:5px;opacity: 0.5;"></div>
+                            </div><br>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br><h6>Customer Reviews</h6><br>
+                    <p style="font-size:18px; font-weight:bold">Customer Name</p>
+                    <p style="margin-left:40px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget accumsan nisl. Fusce nec felis libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.  Duis a dapibus massa, non consequat ante. </p>
+                    <p style="font-size:18px; font-weight:bold">Customer Name</p>
+                    <p style="margin-left:40px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget accumsan nisl. Fusce nec felis libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec at orci leo. Mauris fermentum at felis vitae pharetra. </p><br>
+                    <p style="font-size:18px; font-weight:bold">Customer Name</p>
+                    <p style="margin-left:40px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget accumsan nisl. Fusce nec felis libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec at orci leo. Mauris fermentum at felis vitae pharetra. </p><br>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left:30px">
+
+<!--            SIMILAR PRODUCTS-->
+
+        <br><h5>SIMILAR PRODUCTS</h5><br>
+            <div class="card-deck">
+                 <div class="card ">
+                  <img class="card-img-top" src="s1.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 001..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 001"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card ">
+                  <img class="card-img-top" src="s2.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 002..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 002"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="card ">
+                  <img class="card-img-top" src="s3.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 003..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 003"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="card ">
+                  <img class="card-img-top" src="s4.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 004..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 004"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="card ">
+                  <img class="card-img-top" src="s5.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 005..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 005"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="card ">
+                  <img class="card-img-top" src="s6.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 006..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 006"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+            </div><br>
+             <div class="card-deck">
+                 <div class="card ">
+                  <img class="card-img-top" src="s7.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 007..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 007"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="card ">
+                  <img class="card-img-top" src="s8.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 008..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 008"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card ">
+                  <img class="card-img-top" src="s9.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 009..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt "  value="Shoe Name 009" style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="card ">
+                  <img class="card-img-top" src="s10.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 010..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 010"  style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="card ">
+                  <img class="card-img-top" src="s11.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 011..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 011" style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="card ">
+                  <img class="card-img-top" src="s12.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h5>Nike</h5>
+                    <p class="card-text">Shoe Name 012..</p>
+                    <p><b>Rs.15456</b></p>
+                    <div class="btn-group">
+                        <button type="button" class="btn addToCrt " value="Shoe Name 012" style=" ;background-color:#ff3e6c; width:50%;font-weight:bold;color:white">Add to Cart</button>
+                        <button type="button" class="btn  addToWishlist" style="margin-left: 4px;width:40%;border:1px solid black;font-size:15px;font-weight:bold">Wish List</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Carousel-->
+
+
+h2>Modal Example</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+<div style="width:80%">
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg" >
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="shoes1.png"  width="600px" height="600px" >
+    </div>
+    <div class="carousel-item">
+      <img src="shoes3.png" wwidth="600px" height="600px" >
+    </div>
+    <div class="carousel-item">
+      <img src="shoes2.png"  width="600px" height="600px">
+    </div>
+    <div class="carousel-item">
+      <img src="shoes4.png"  width="600px" height="600px">
+    </div>
+    <div class="carousel-item">
+      <img src="shoes7.png"  width="600px" height="600px">
+    </div>
+    <div class="carousel-item">
+      <img src="shoes6.png"  width="600px" height="600px">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev" style="background-color:grey">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next" style="background-color:grey">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    $(document).ready(function()
+    {
+
+        $(".imgprod").click(function()
+        {
+            $("#myModal").modal('toggle');
+        });
+
+        $(".addToCrt").click(function()
+        {
+            alert($(this).val() );
+        });
+    });
+
+</script>
+</body>
+</html>
